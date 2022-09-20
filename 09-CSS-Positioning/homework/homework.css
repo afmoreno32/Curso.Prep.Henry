@@ -6,33 +6,98 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 1: Centrar el texto en un span */
 
 /* Arrancaremos este ejercicio por vos: */
+/* aqui pidieron que e texto del 
+el text aling sirve en los elementos block 
+y el span del ejercicio 1 es inline
+el display block nos ayuda el text 
+aling sirve para darle orden a texto que 
+queramos */
 #ejercicioUno {
-
+    display:block;
+    text-align: center;
 }
+
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
+/*visibility: hidden;
+este es utilizado para quitar visibilidad
+pero ocupa el espacio no lo quita quiere
+decir que es invicible el display si 
+lo quita*/
+
+#ejercicioDos{
+    display: none;
+}
 
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
+/*el atributo position se utiliza para 
+mover las imagenes pero tiene 2 formas de usar
+que son relative que la ubica pero el espacio
+que usaba anteriormente lo deja aun ocupado 
+aun la imagen no este en ese lugar asi que cuando
+otra imagen quiera usar ese lugar no la podra utiizar
+el absolute se traslada totlmente y deja de usar el esacio usado
+top iniia de y left inicia de */
 
-
-
+#ejerciciotres{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
-
+/*aqui con el posicion le damos pocision fija al 
+cuadro azul con el position pide que en la parte
+superior dereha entonces se pone el 
+0 en los dos atributos */
+#ejercicioCuatro{
+    position:fixed;
+    top: 0;
+    left: 0;
+}
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
+/*aqui nos pidieron que el display
+fuera flex o bueno la caja entonces le damos
+ese atributo con el justify centramos de forma
+horizontal con espacion los contenidos
+que no queden pegados pues y para alinear de
+forma vertical se usa el aligg */
+#ejercicioCinco{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-
+    flex-direction: row-reverse;
+}
 
 /* Ejercicio 6. */
+/*cambiar la posicion de los elementos
+tiene varias formas de posicionarse pero
+en este caso usarems el que se acomoda a
+lo que esta pidiendo el ejercicio el 
+row-reverse*/
+
+#ejercicioSiete{
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#elementoCuatro{
+    align-self: start;
+}
